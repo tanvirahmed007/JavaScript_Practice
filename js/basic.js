@@ -7,12 +7,12 @@ document.getElementById("heading").style.backgroundColor = "yellow";
 
 // write() method
 
-document.write("Hello World!");
+// document.write("Hello World!");
 
 // alert() method
 
 // window.alert("Hello World! Welcome to JavaScript");
-alert("Hello World! Welcome to JavaScript");
+// alert("Hello World! Welcome to JavaScript");
 
 // console.log() method
 
@@ -113,3 +113,42 @@ const myObj = {
     ]
   } 
   console.log(myObj);
+
+
+
+//   DOM find element
+
+const show = (a,b) =>{
+    return document.querySelectorAll("p.output").innerText = 10+20;
+}
+
+
+// form
+
+const formFunc = () =>{
+    let name = document.forms["myForm"]["name"].value;
+    if (name.length < 5) {
+        alert("Name must be atleast 5 characters long.");
+        return false;
+    }
+    else if (name === " ") {
+        alert("Name must be filled out");
+        return false;
+    }
+        
+     else {
+        
+        alert("Name is valid");
+        return true;
+    }
+
+}
+
+
+// navigation
+
+document.getElementById("id3").innerHTML = document.lastChild.nodeValue;
+
+
+
+
